@@ -12,12 +12,21 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
+<<<<<<< HEAD
 topdir = /Users/fukumurako/.rbenv/versions/2.5.1/include/ruby-2.5.0
 hdrdir = $(topdir)
 arch_hdrdir = /Users/fukumurako/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin17
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
 prefix = $(DESTDIR)/Users/fukumurako/.rbenv/versions/2.5.1
+=======
+topdir = /Users/aki/.rbenv/versions/2.5.1/include/ruby-2.5.0
+hdrdir = $(topdir)
+arch_hdrdir = /Users/aki/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18
+PATH_SEPARATOR = :
+VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
+prefix = $(DESTDIR)/Users/aki/.rbenv/versions/2.5.1
+>>>>>>> 5639bf22bc93870a3c60cfeb2171de529b2ff49f
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -31,8 +40,13 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
+<<<<<<< HEAD
 sitearchdir = $(DESTDIR)./.gem.20190907-91972-pkovrb
 sitelibdir = $(DESTDIR)./.gem.20190907-91972-pkovrb
+=======
+sitearchdir = $(DESTDIR)./.gem.20190907-43365-1rvdyoi
+sitelibdir = $(DESTDIR)./.gem.20190907-43365-1rvdyoi
+>>>>>>> 5639bf22bc93870a3c60cfeb2171de529b2ff49f
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -82,12 +96,21 @@ debugflags = -ggdb3
 warnflags = -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens
 CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS)  -O3 -Wno-error=shorten-64-to-32  -pipe  $(ARCH_FLAG)
+<<<<<<< HEAD
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) -I/usr/local/Cellar/sqlite/3.28.0/include
 DEFS     = 
 CPPFLAGS = -DHAVE_RB_PROC_ARITY -DHAVE_RB_INTEGER_PACK -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT -DHAVE_SQLITE3_COLUMN_DATABASE_NAME -DHAVE_SQLITE3_ENABLE_LOAD_EXTENSION -DHAVE_SQLITE3_LOAD_EXTENSION -DHAVE_SQLITE3_OPEN_V2 -DHAVE_SQLITE3_PREPARE_V2 -DHAVE_TYPE_SQLITE3_INT64 -DHAVE_TYPE_SQLITE3_UINT64 -I/usr/local/opt/sqlite/include -I/Users/fukumurako/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags)  $(ARCH_FLAG)
 ldflags  = -L. -L/Users/fukumurako/.rbenv/versions/2.5.1/lib  -fstack-protector -L/usr/local/lib -L/usr/local/Cellar/sqlite/3.28.0/lib
 dldflags = -L/Users/fukumurako/.rbenv/versions/2.5.1/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
+=======
+INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) 
+DEFS     = 
+CPPFLAGS = -DHAVE_RB_PROC_ARITY -DHAVE_RB_INTEGER_PACK -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT -DHAVE_SQLITE3_COLUMN_DATABASE_NAME -DHAVE_SQLITE3_OPEN_V2 -DHAVE_SQLITE3_PREPARE_V2 -DHAVE_TYPE_SQLITE3_INT64 -DHAVE_TYPE_SQLITE3_UINT64 -I/usr/local/Cellar/sqlite/3.29.0/include -I/Users/aki/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CXXFLAGS = $(CCDLFLAGS) $(cxxflags)  $(ARCH_FLAG)
+ldflags  = -L. -L/Users/aki/.rbenv/versions/2.5.1/lib  -fstack-protector -L/usr/local/lib 
+dldflags = -L/Users/aki/.rbenv/versions/2.5.1/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
+>>>>>>> 5639bf22bc93870a3c60cfeb2171de529b2ff49f
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
@@ -102,7 +125,11 @@ RUBY_VERSION_NAME = $(RUBY_BASE_NAME)-$(ruby_version)
 RUBYW_BASE_NAME = rubyw
 RUBY_BASE_NAME = ruby
 
+<<<<<<< HEAD
 arch = x86_64-darwin17
+=======
+arch = x86_64-darwin18
+>>>>>>> 5639bf22bc93870a3c60cfeb2171de529b2ff49f
 sitearch = $(arch)
 ruby_version = 2.5.0
 ruby = $(bindir)/$(RUBY_BASE_NAME)
@@ -122,8 +149,13 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
+<<<<<<< HEAD
 libpath = . $(libdir) /usr/local/opt/sqlite/lib
 LIBPATH =  -L. -L$(libdir) -L/usr/local/opt/sqlite/lib
+=======
+libpath = . $(libdir) /usr/local/Cellar/sqlite/3.29.0/lib
+LIBPATH =  -L. -L$(libdir) -L/usr/local/Cellar/sqlite/3.29.0/lib
+>>>>>>> 5639bf22bc93870a3c60cfeb2171de529b2ff49f
 DEFFILE = 
 
 CLEANFILES = mkmf.log
