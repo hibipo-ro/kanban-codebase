@@ -21,6 +21,7 @@ class CardsController < ApplicationController
   private
 
     def card_params
-      params.require(:card).permit(:title, :memo).merge
+      params.require(:card).permit(:title, :memo).merge(list_id: list.id)
+      # merge(user: current_user)
     end
 end
