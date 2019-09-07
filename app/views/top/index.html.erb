@@ -9,7 +9,7 @@
           <h2 class="list_header_title"><%=link_to "作成", new_list_card_path(list) %></h2>
           <ul>
           <% list.cards.each do |card| %>
-            <li><%=link_to  card.title , "/lists/#{list.id}/cards/#{card.id}" %></li>
+            <li><%=link_to  card.title , "/list/#{list.id}/card/#{card.id}" %></li>
           <% end %>
           </ul>
           

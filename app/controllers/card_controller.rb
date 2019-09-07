@@ -1,4 +1,4 @@
-class CardsController < ApplicationController
+class CardController < ApplicationController
 
   def index
     @cards = Card.all
@@ -24,12 +24,14 @@ class CardsController < ApplicationController
   end
 
   def edit 
-    @card = Card.find(params[:id])
+    # @card = Card.find(params[:id])
+    # @list = List.all
+    @lists = List.where(user: current_user)
   end
 
   def update
     @card = Card.find(params[:id])
-    @card.update(card_params)
+    @card.update!(card_params)
     redirect_to :root
   end
 

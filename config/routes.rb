@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
   
-  resources :lists, only: %i(new create edit update destroy) do
-    resources :cards
+  resources :list, only: %i(new create edit update destroy) do
+    resources :card
   end
 end
