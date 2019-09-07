@@ -1,0 +1,19 @@
+current directory: /Users/fukumurako/Development/kanban-codebase/kanban-codebase/vendor/bundle/gems/byebug-11.0.1/ext/byebug
+/Users/fukumurako/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190907-91972-14zx9z3.rb extconf.rb
+creating Makefile
+
+current directory: /Users/fukumurako/Development/kanban-codebase/kanban-codebase/vendor/bundle/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/fukumurako/Development/kanban-codebase/kanban-codebase/vendor/bundle/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/fukumurako/Development/kanban-codebase/kanban-codebase/vendor/bundle/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20190907-91972-1kn0dn7/byebug
