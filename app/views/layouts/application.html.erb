@@ -14,7 +14,7 @@
       <nav class="nav">
         <ul class="header_menu">
           <% if user_signed_in? %>
-            <li class="nav-link"><%= current_user.email %></li>
+            <li class="nav-link"><%= current_user.name %></li>
           <% end %>
           <li class="header_menu_title"><%= link_to "kanban", class: "nav-link" %></li>
           <li>
