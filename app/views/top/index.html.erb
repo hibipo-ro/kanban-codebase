@@ -3,10 +3,16 @@
     <% @lists.each do |list| %>
       <div class="list">
         <div class="list_header">
-          <h2 class="list_header_title"><%=link_to list.title, edit_list_path(list) %></h2>
+          <h2 class="list_header_title"><%= list.title %></h2>
           <h4 class="list_header_title"><%=link_to "削除", list_path(list), method: :delete %></h4>
+          <h2 class="list_header_title"><%=link_to "編集", edit_list_path(list) %></h2>
           <h2 class="list_header_title"><%=link_to "作成", new_list_card_path(list) %></h2>
-
+          <ul>
+          <% @cards.each do |card| %>
+            <li><%=link_to  card.title , "/lists/#{list.id}/cards/#{card.id}/edit" %></li>
+          <% end %>
+          </ul>
+          
         </div>
       </div>
     <% end %>
