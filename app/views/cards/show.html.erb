@@ -1,0 +1,8 @@
+<div class="listnewPage">
+  <div class="container">
+   <p><%= @card.title %></p> 
+   <p><%= @card.memo %></p>  
+  </div>
+  <%= link_to "編集", edit_list_card_path %>
+  <%= link_to "削除", list_card_path, method: :delete %>
+</div>
