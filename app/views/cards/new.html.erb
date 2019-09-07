@@ -1,0 +1,14 @@
+<div class="listnewPage">
+  <div class="container">
+    <%= form_with model: @card, url: { action: :create }, class: "new_card" do |f| %>
+      <% if @card.errors.any? %>
+        <p class="text-danger">タイトルは1～255文字以内で入力してください</p>
+      <% end %>
+      <%= f.label :title %>
+      <%= f.text_field :title, autofocus: true, class: "form-control listName", placeholder: "タイトル名" %>
+      <%= f.label :memo %>
+      <%= f.text_field :memo, autofocus: true, class: "form-control listName", placeholder: "メモ名" %>
+      <div class="text-center"><%= f.submit "作成", class: "submitBtn" %></div>
+    <% end %>
+  </div>
+</div>
