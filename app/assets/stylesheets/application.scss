@@ -13,5 +13,13 @@
  *= require_tree .
  *= require_self
  */
- @import 'bootstrap';
- 
+
+@import 'bootstrap';
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+@import "custom";
+
+/* ここに追加する */
+
+@import "list/new";
+@import "top";
