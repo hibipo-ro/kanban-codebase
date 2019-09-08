@@ -1,6 +1,6 @@
 # Trello風todoアプリ　codebaseハッカソン作成中
 
-https://kanbancodebase.herokuapp.com/
+[link](https://kanbancodebase.herokuapp.com/){:target="_blank"}
 
 ## 
 - Rails 5.2.3
